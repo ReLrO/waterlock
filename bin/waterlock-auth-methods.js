@@ -57,7 +57,7 @@ module.exports = function(){
         case 'models':
         case 'controllers':
         case 'configs':
-        case 'views':
+        // case 'views':
         case 'policies':
           this.collect(task);
           break;
@@ -90,7 +90,7 @@ module.exports = function(){
       this.collect('controllers');
       this.collect('configs');
       this.collect('policies');
-      this.collect('views');
+      // this.collect('views');
     },
 
     /**
@@ -132,7 +132,7 @@ module.exports = function(){
       this.log('  models                 generates all models', false);
       this.log('  controllers            generates all controllers', false);
       this.log('  configs                generates default configs', false);
-      this.log('  views                  generates default view templates', false);
+      // this.log('  views                  generates default view templates', false);
       this.log('  policies               generates all policies');
     },
 
@@ -190,8 +190,8 @@ module.exports = function(){
           return '/config'; 
         case 'policies':
           return '/api/policies'; 
-        case 'views':
-          return '/views'; 
+        // case 'views':
+        //   return '/views'; 
         default:
           return null; 
         }
